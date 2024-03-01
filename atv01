@@ -1,0 +1,36 @@
+//atv01
+var v1 = Number(prompt("Digite o primeiro número:"));
+
+
+var v2 = Number(prompt("Digite o segundo número:"));
+
+
+var v3 = Number(prompt("Digite o terceiro número:"));
+
+console.log("Os números digitados são:");
+console.log(v1);
+console.log(v2);
+console.log(v3);
+
+//atv02 
+var v1 = Number(prompt("Digite o primeiro número:"));
+
+var v2 = Number(prompt("Digite o segundo número:"));
+
+var v3 = Number(prompt("Digite o terceiro número:"));
+
+var soma = v1 + v2 + v3;
+
+var media = soma / 3;
+
+console.log("A média dos números é: " + media);
+
+//atv03
+
+var numero1 = ;
+var numero2 = ;
+var numero3 = ;
+
+console.log(numero1);
+console.log(numero2);
+console.log(numero3);
