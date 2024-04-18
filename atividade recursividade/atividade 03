@@ -1,0 +1,17 @@
+function potenciaRecursiva(x, k) {
+
+    if (k === 0) {
+        return 1;
+    }
+    
+    if (k === 1) {
+        return x;
+    }
+    
+    return x * potenciaRecursiva(x, k - 1);
+}
+
+const base = 2;
+const expoente = 3;
+const resultado = potenciaRecursiva(base, expoente);
+console.log(base + " elevado a " + expoente + " é igual a:", resultado);
