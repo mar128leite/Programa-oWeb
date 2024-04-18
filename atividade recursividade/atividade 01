@@ -1,0 +1,12 @@
+function somaRecursiva(N) {
+   
+    if (N === 1) {
+        return 1;
+    }
+    
+    return N + somaRecursiva(N - 1);
+}
+
+const numero = 5;
+const resultado = somaRecursiva(numero);
+console.log("A soma de 1 até", numero, "é:", resultado);
