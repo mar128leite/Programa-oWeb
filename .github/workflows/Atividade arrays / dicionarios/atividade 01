@@ -1,0 +1,19 @@
+
+let listaDeAlunos = [];
+
+
+function adicionarAluno(id, nome, nota) {
+    const novoAluno = { id: id, nome: nome, nota: nota };
+    listaDeAlunos.push(novoAluno);
+}
+
+
+function buscarAlunoPorId(id) {
+    return listaDeAlunos.find(aluno => aluno.id === id);
+}
+
+function calcularMediaNotas() {
+    const totalNotas = listaDeAlunos.reduce((total, aluno) => total + aluno.nota, 0);
+    return totalNotas / listaDeAlunos.length;
+}
+
