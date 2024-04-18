@@ -1,0 +1,31 @@
+
+let dicionarioDeAlunos = {};
+
+function adicionarAluno(id, nome, nota) {
+    dicionarioDeAlunos[id] = { nome: nome, nota: nota };
+}
+
+
+function buscarAlunoPorId(id) {
+    return dicionarioDeAlunos[id];
+}
+
+
+function calcularMediaNotas() {
+    const idsAlunos = Object.keys(dicionarioDeAlunos);
+    const totalNotas = idsAlunos.reduce((total, id) => total + dicionarioDeAlunos[id].nota, 0);
+    return totalNotas / idsAlunos.length;
+}
+
+
+adicionarAluno(1, "João", 7);
+adicionarAluno(2, "Maria", 8);
+adicionarAluno(3, "Pedro", 6);
+
+console.log("Dicionário de alunos:", dicionarioDeAlunos);
+
+const alunoEncontrado = buscarAlunoPorId(2);
+console.log("Aluno encontrado:", alunoEncontrado);
+
+const mediaNotas = calcularMediaNotas();
+console.log("Média das notas dos alunos:", mediaNotas);
